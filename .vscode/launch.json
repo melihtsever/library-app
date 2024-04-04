@@ -1,0 +1,12 @@
+{
+  "type": "node",
+  "request": "launch",
+  "name": "Nest Debug",
+  "runtimeExecutable": "npm",
+  "runtimeArgs": ["run", "start:debug", "--", "--inspect-brk"],
+  "restart": true,
+  "protocol": "auto",
+  "autoAttachChildProcesses": true,
+  "envFile": "${workspaceFolder}/.env",
+  "outputCapture": "std"
+}
