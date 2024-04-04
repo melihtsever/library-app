@@ -1,8 +1,8 @@
-import {Module} from '@nestjs/common';
-import {ConfigModule, ConfigService} from '@nestjs/config';
-import {Request} from 'express';
-import {IncomingMessage} from 'http';
-import {LoggerModule as PinoLoggerModule} from 'nestjs-pino';
+import { Module } from '@nestjs/common';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { Request } from 'express';
+import { IncomingMessage } from 'http';
+import { LoggerModule as PinoLoggerModule } from 'nestjs-pino';
 
 const passUrl = ['/health', '/documentation'];
 @Module({
@@ -47,7 +47,7 @@ const passUrl = ['/health', '/documentation'];
           },
           formatters: {
             level(level) {
-              return {level};
+              return { level };
             },
           },
           /*
